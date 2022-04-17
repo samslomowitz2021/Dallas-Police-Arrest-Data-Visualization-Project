@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script src="static/data/genderYear9.json"></script>
+    <script src="static/js/app.js"></script>
+
+
+</head>
+<body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-custom">
+  
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="row">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="col-xs-9 phone-nav">
+                <a class="navbar-brand" href="#" id="logo">Menu</a>
+              </div>
+            </div>
+  
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                   <li><a href="plots.html">Ploy.ly Dashboard</a></li>
+                    <li><a href="static/js/map.js">Leaflet Map</a></li>
+                    <li><a href="table.html">Data Table</a></li>
+                    <li><a href="members.html">Meet the Team</a></li>
+                  </ul>
+                </li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="table.html">Data</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+      <!-- End of navbar -->
+  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+                <h1>Dallas Police Arrests</h1>
+                <p>Use the interactive charts below to explore the dataset</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well">
+                    <h5>Race Category</h5>
+                    <select id="selDataset">
+                        <option>All</option>
+                    </select>
+                </div>
+                
+
+    <div class="row">
+      <div class="col-md-12">
+          <div id="myDiv"></div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+          <div id="myDiv2"></div>
+
+
+      </div>
+          
+        <div class="col-md-6">
+            <div id="myDiv2b"></div>
+
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+          <div id="myDiv3"></div>
+
+
+      </div>
+          
+        <div class="col-md-6">
+            <div id="myDiv4"></div>
+
+        </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-md-12">
+          <div id="myDiv5"></div>
+
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-12">
+          <div id="sunburst"></div>
+
+      </div>
+    </div>
+
+</body>
+
+</html>
