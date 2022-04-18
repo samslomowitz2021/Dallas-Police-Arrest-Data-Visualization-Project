@@ -3,7 +3,7 @@ $(document).ready(function() {
 
    // Event Listener
    $("#filter").on("click", function() {
-    doWork();
+    doWork2();
 });
 
 });
@@ -22,6 +22,18 @@ function doWork() {
     requestD3(url);
 }
 
+function doWork2() {
+
+    // Use this link to get the GeoJSON data.
+    var url = "static/data/map10.json";
+
+    // clear out the old map 
+    $("#map-container").empty();
+    $("#map-container").append('<div id="map" style="height:900px"></div>');
+
+    requestD3b(url);
+}
+
 
 
 function requestD3(url) {
@@ -33,11 +45,13 @@ function requestD3(url) {
     });
 }
 
-function makeDashboard(data) {
-    let id = $("#selDataset").val();
-    
-    createMap(data);
-    
+function requestD3b(url) {
+    d3.json(url).then(function(data) {
+        console.log(data);
+        // createDropdown(data);
+        createMap(data);
+        console.log(data)
+    });
 }
 
 function createDropdown(data) {
@@ -52,6 +66,15 @@ function createDropdown(data) {
         $("#selDataset").append(html);
     }
 }
+
+function makeDashboard(data) {
+    let id = $("#selDataset").val();
+    
+    createMap(data);
+    
+}
+
+
 
 function createMap(data) {
     console.log(data)
