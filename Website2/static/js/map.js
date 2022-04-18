@@ -144,7 +144,7 @@ function createMap(data) {
     // Edit the code to add the earthquake data to the layers.
     var myMap = L.map("map", {
         center: [32.7767, -96.7970],
-        zoom: 13,
+        zoom: 11,
         layers: [dark_layer, heatLayer]
     });
 
