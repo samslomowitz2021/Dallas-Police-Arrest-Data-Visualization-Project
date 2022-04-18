@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dallas Crime</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/css3.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="static/js/leaflet-map.js"></script>
+
+    <!-- JavaScript file -->
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <script type="text/javascript" src="static/js/map.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-custom">
+  
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="row">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="col-xs-9 phone-nav">
+                <a class="navbar-brand" href="#" id="logo">Menu</a>
+              </div>
+            </div>
+  
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="plots.html">Ploy.ly Dashboard</a></li>
+                    <li><a href="map.html">Leaflet Map</a></li>
+                    <li><a href="mapTable.html">Map Data</a></li>
+                    <li><a href="team.html">Meet the Team</a></li>
+                    <li><a href="worksCited.html">References</a></li>
+                  </ul>
+                </li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="table.html">Main Data</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+      <!-- End of navbar -->
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+                <h1>Dallas Police Arrests</h1>
+                <p>Use the interactive map below to explore the dataset</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well">
+                    <h5>Race Category</h5>
+                    <select id="selDataset">
+                        <option>All</option>
+                    </select>
+                </div>
+                <center>
+                <div class="row ">
+                  <div class="col-md-6">
+                      <button type="button" class="btn btn-primary" id="filter">FILTER!</button>
+                  </div>
+              </div>
+            </center>
+
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+          <div id="map-container">
+              <!-- The div where we'll insert our map -->
+              <div id="map" style="height:900px"></div>
+          </div>
+      </div>
+  </div>
+
+
+</body>
+
+</html>
