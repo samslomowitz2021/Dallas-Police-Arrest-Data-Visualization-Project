@@ -14,7 +14,7 @@ We want to build a interactive dashboard using JavaScript libraries to visualize
 
 ![Alt text](age.png?raw=true "Title")
 
-![Alt text](age.map?raw=true "Title")
+![Alt text](map.png?raw=true "Title")
 
 ### Future Work
 ---
