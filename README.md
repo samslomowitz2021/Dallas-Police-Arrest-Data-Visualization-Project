@@ -10,6 +10,12 @@ Racial bias exists in use-of-force arrests and white police officers with less e
 ---
 We want to build a interactive dashboard using JavaScript libraries to visualize police arrest data in Dallas, TX. Our main filter will be racial categories. We would like to design an interactive map similar to the UK Police Tableau Public dashboard showing the location of the incidents colored by type of crime (https://public.tableau.com/app/profile/laurentghesquiere/viz/UKPoliceData/UKPoliceIncidentsDashboard).
 
+### Preview of our Project
+
+![Alt text](age.png?raw=true "Title")
+
+![Alt text](age.map?raw=true "Title")
+
 ### Future Work
 ---
 We would like to further explore the Dallas Police Department API to bring in real-time data and visualize crime, location, and arrest data in the DFW metroplex. Our main questions would be:
